@@ -1,7 +1,10 @@
 # Quarkus Non Blocking
 (also called reactive quarkus)
 
-then run on console:
+## Run the code locally
+I used docker in order to develop this code locally. Here's you you can run it too:
+
+run on console:
 ```
 docker run --name reactive_quarkus -e POSTGRES_PASSWORD=123 -d -p 5432:5432 postgres
 ```
@@ -9,7 +12,9 @@ afterward you need to initialize it:
 ```
 docker exec -it reactive_quarkus psql -U postgres -c "CREATE DATABASE bookdatabase;"
 ```
+afterwards you can start the java application.
 
+# Quarkus Non Blocking - setup data
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 
 If you want to learn more about Quarkus, please visit its website: <https://quarkus.io/>.
