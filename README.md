@@ -1,5 +1,5 @@
-# reactive-quarkus-2
-
+# Quarkus Non Blocking
+(also called reactive quarkus)
 
 then run on console:
 ```
