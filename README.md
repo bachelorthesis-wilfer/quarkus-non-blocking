@@ -17,7 +17,7 @@ docker exec -it non_blocking_quarkus psql -U postgres -c "CREATE DATABASE bookda
 
 depending on whether or not your code automatically creates a table you might need to go into the docker postgres and initialize the table like this:
 ```
-CREATE TABLE IF NOT EXISTS book (id SERIAL PRIMARY KEY, title VARCHAR(255), author VARCHAR(255), price INTEGER, isbn VARCHAR(255));
+CREATE TABLE IF NOT EXISTS book (id SERIAL PRIMARY KEY, title VARCHAR(255), author VARCHAR(255), price INTEGER, isbn INTEGER);
 ```
 
 Afterwards you can start your application and everything should work. (I use IntelliJ to run it.)
